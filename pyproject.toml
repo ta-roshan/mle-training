@@ -61,4 +61,3 @@ filterwarnings = [
     # this ignore can be removed when support for 3.7 is dropped.
     '''ignore:Bare functions are deprecated, use async ones:DeprecationWarning''',
 ]
-
