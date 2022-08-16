@@ -92,6 +92,7 @@ housing["rooms_per_household"] = housing["total_rooms"] / housing["households"]
 housing["bedrooms_per_room"] = housing["total_bedrooms"] / housing["total_rooms"]
 housing["population_per_household"] = housing["population"] / housing["households"]
 
+
 housing = strat_train_set.drop(
     "median_house_value", axis=1
 )  # drop labels for training set
@@ -195,6 +196,7 @@ y_test = strat_test_set["median_house_value"].copy()
 
 X_test_num = X_test.drop("ocean_proximity", axis=1)
 X_test_prepared = imputer.transform(X_test_num)
+
 X_test_prepared = pd.DataFrame(
     X_test_prepared, columns=X_test_num.columns, index=X_test.index
 )

@@ -1,0 +1,23 @@
+{
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "workbench.colorTheme": "Default Dark+",
+    "python.formatting.blackArgs": [
+        "--line-length=99"
+    ],
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+        }
+    },
+    "git.autofetch": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+    }
+}
