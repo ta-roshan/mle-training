@@ -1,0 +1,1539 @@
+Script started on 2022-06-13 15:22:49+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="168" LINES="46"]
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# cd[K[Kls
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# pwd
+/mnt/d/Git
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# ls
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# git [K[K[K[Kmkdir git-tutorial
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# ls
+[0m[34;42mgit-tutorial[0m
+(base) ]0;root@TIGER01692: /mnt/d/Gitroot@TIGER01692:/mnt/d/Git# cd[K[Kcd git-tutorial/
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git init[K[K[K[K[K[K[K[Kkeygen [K[K[K[K[K[K[Kssh-keygen gen
+Too many arguments.
+usage: ssh-keygen [-q] [-b bits] [-C comment] [-f output_keyfile] [-m format]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-N new_passphrase] [-O option] [-w provider]
+       ssh-keygen -p [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q -f krl_file file ...
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+       		-n namespace -s signature_file [-r revocation_file]
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ssh-keygen gen[K[K[K
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:/HkuC13Te2aax9jTKMM6mbCqKtEi53NWH9jfKEtsAcA root@TIGER01692
+The key's randomart image is:
++---[RSA 3072]----+
+|   ..            |
+|    E.           |
+|      .          |
+|       o     .   |
+| .     oS   o .  |
+|+ o   o.++ o . . |
+|.=   . .==+*. .==|
+|. o o  o+.Bo= oB=|
+| ..=.....oo=.oo..|
++----[SHA256]-----+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# cat ~/.ssh/rsa[K[K[Kid_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCcm3dvCFkUyB2cQu5PVvpGlSm9CIdpNzBXoIcoYJ1OxDbUttLQCyOr0u522AmFzUQsZMAfinsPQXShU6iw4NFSK5sMfzlBMkWH8oT8/AzNQ87RPv5odDqF6HsVB0LSuqPSj/8Z9gdePuk+nknWfGbWEvlQo1zV5b71Cz+Z+BLvE7YPMrQ1vcpKiQgaZd9188UL3yZVBDzUFx4r83rsnUPpBCC2f9M9uxL2OLmp5rlKoxLY1/rur4zBmx18Ti3Wmw/FnTyAghJLRzun2Hx7lSTIw4UdhMi8Wd2SjgyGkjlMyswRAEcD3lbspT7uGc3Pze27uR+oj1jMjXRvgXqXtVBd2Gd4jzlscLxUuFIiKh77+nhwnm8A9W2xw+pRq/9wtk9T5us4tW4HSH9M5CdBBvgmVlLgrNeJOmGAkkYxLPpl32JM9t9YoYexjzwX/XkPsCrGWkgfOCQ9o44dUTRW8LBPwXxnmTjbidkWPzFBJmatsziR8mz/J47r0ryiTX7D5Hc= root@TIGER01692
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git[K[K[Kcat ~/.ssh/id_rsa.pub [11Pssh-keygen[Cgenls[Kcd git-tutorial/ls[Kmkdir git-tutorialls[Kpwd[1Plsgit clone https://github.com/ta-roshan/git-tutorial
+Cloning into 'git-tutorial'...
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': Success
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add remote[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls -a
+[0m[34;42m.[0m  [34;42m..[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git init
+Initialized empty Git repository in /mnt/d/Git/git-tutorial/.git/
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add remote origin git@[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kremote add origin git@github.com/[K:roshandetroshandearoshande-roshande5~roshande[1Proshande[1Proshande[C[C[C[C[C[C[C[C[K[K/git-ti[Kutorial
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pull
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.176.102' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 644 bytes | 80.00 KiB/s, done.
+From github.com:ta-roshan/git-tutorial
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Switched to a new branch 'main'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pull
+Warning: Permanently added the ECDSA host key for IP address '13.234.210.38' to the list of known hosts.
+Already up to date.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# sudo apt install git
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.25.1-1ubuntu3.4).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git --version
+git version 2.25.1
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git cong[Kfig --[K[K[K
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config --get-all
+[?1h=error: wrong number of arguments, should be from 1 to 2[m
+usage: git config [<options>][m
+[m
+Config file location[m
+    --global              use global config file[m
+    --system              use system config file[m
+    --local               use repository config file[m
+    --worktree            use per-worktree config file[m
+    -f, --file <file>     use given config file[m
+    --blob <blob-id>      read config from given blob object[m
+[m
+Action[m
+    --get                 get value: name [value-regex][m
+    --get-all             get all values: key [value-regex][m
+    --get-regexp          get values for regexp: name-regex [value-regex][m
+    --get-urlmatch        get value specific for the URL: section[.var] URL[m
+    --replace-all         replace all matching variables: name value [value_regex][m
+    --add                 add a new variable: name value[m
+    --unset               remove a variable: name [value-regex][m
+    --unset-all           remove all matches: name [value-regex][m
+    --rename-section      rename section: old-name new-name[m
+    --remove-section      remove a section: name[m
+    -l, --list            list all[m
+    -e, --edit            open an editor[m
+    --get-color           find the color configured: slot [default][m
+    --get-colorbool       find the color setting: slot [stdout-is-tty][m
+[m
+Type[m
+    -t, --type <>         value is given this type[m
+    --bool                value is "true" or "false"[m
+    --int                 value is decimal number[m
+    --bool-or-int         value is --bool or --int[m
+    --path                value is a path (file or directory name)[m
+    --expiry-date         value is an expiry date[m
+[m
+Other[m
+    -z, --null            terminate values with NUL byte[m
+    --name-only           show variable names only[m
+    --includes            respect include directives on lookup[m
+    --show-origin         show origin of config (file, standard input, blob, command line)[m
+    --default <value>     with --get, use default value when missing entry[m
+[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config --get-all[K[K[K[K[K[K[K[Kl
+[?1h=core.repositoryformatversion=0[m
+core.filemode=false[m
+core.bare=false[m
+core.logallrefupdates=true[m
+core.ignorecase=true[m
+remote.origin.url=git@github.com:ta-roshan/git-tutorial[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config -l --show-origin
+[?1h=file:.git/config        core.repositoryformatversion=0[m
+file:.git/config        core.filemode=false[m
+file:.git/config        core.bare=false[m
+file:.git/config        core.logallrefupdates=true[m
+file:.git/config        core.ignorecase=true[m
+file:.git/config        remote.origin.url=git@github.com:ta-roshan/git-tutorial[m
+file:.git/config        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+file:.git/config        branch.main.remote=origin[m
+file:.git/config        branch.main.merge=refs/heads/main[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config --user [K.name "ta-roshan"
+error: unknown option `user.name'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config --user.name "ta-roshan"[1@l[1@o[1@c[1@a[1@l[1@ 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git config --local user.email roshan.hande@tigeranalytics.com
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git conifg[K[K[Kfig -l
+[?1h=core.repositoryformatversion=0[m
+core.filemode=false[m
+core.bare=false[m
+core.logallrefupdates=true[m
+core.ignorecase=true[m
+remote.origin.url=git@github.com:ta-roshan/git-tutorial[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+user.name=ta-roshan[m
+user.email=roshan.hande@tigeranalytics.com[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# vim [K[K[K[Knano RE[Kgit help config
+[?1049h[22;0;0t[?1h=GIT-CONFIG(1)                                                                Git Manual                                                               GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [-z|--null] name [value [value_regex]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add name value[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --replace-all name value [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [-z|--null] --get name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [-z|--null] --get-all name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [-z|--null] [--name-only] --get-regexp name_regex [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [-z|--null] --get-urlmatch name URL[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --unset name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --unset-all name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section old_name new_name[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --remove-section name[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--show-origin] [-z|--null] [--name-only] -l | --list[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-color name [default][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-colorbool name [stdout-is-tty][m
+       [4mgit[24m [4mconfig[24m [<file-option>] -e | --edit[m
+[m
+[1mDESCRIPTION[0m[m
+       You can query/set/replace/unset options with this command. The name is actually the section and the key separated by a dot, and the value will be escaped.[m
+[m
+       Multiple lines can be added to an option by using the [1m--add[0m option. If you want to update or unset an option which can occur on multiple lines, a POSIX[m
+       regexp [1mvalue_regex[0m needs to be given. Only the existing values that match the regexp are updated or unset. If you want to handle the lines that do [1mnot[0m match[m
+       the regex, just prepend a single exclamation mark in front (see also the section called “EXAMPLES”).[m
+[m
+       The [1m--type=<type>[0m option instructs [4mgit[24m [4mconfig[24m to ensure that incoming and outgoing values are canonicalize-able under the given <type>. If no [1m--type=<type>[0m[m
+       is given, no canonicalization will be performed. Callers may unset an existing [1m--type[0m specifier with [1m--no-type[0m.[m
+[m
+       When reading, the values are read from the system, global and repository local configuration files by default, and options [1m--system[0m, [1m--global[0m, [1m--local[0m,[m
+       [1m--worktree[0m and [1m--file[0m [1m<filename>[0m can be used to tell the command to read from only that location (see the section called “FILES”).[m
+[m
+       When writing, the new value is written to the repository local configuration file by default, and options [1m--system[0m, [1m--global[0m, [1m--worktree[0m, [1m--file[0m [1m<filename>[0m[m
+       can be used to tell the command to write to that location (you can say [1m--local[0m but that is the default).[m
+[m
+       This command will fail with non-zero status upon error. Some exit codes are:[m
+[m
+       •   The section or key is invalid (ret=1),[m
+[m
+       •   no section or name was provided (ret=2),[m
+[m
+       •   the config file is invalid (ret=3),[m
+[7m Manual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 2 (press h for help or q to quit)[27m[K[K       •   the config file cannot be written (ret=4),[m
+[7m Manual page git-config(1) line 3 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 4 (press h for help or q to quit)[27m[K[K       •   you try to unset an option which does not exist (ret=5),[m
+[7m Manual page git-config(1) line 5 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 6 (press h for help or q to quit)[27m[K[K       •   you try to unset/set an option for which multiple lines match (ret=5), or[m
+[7m Manual page git-config(1) line 7 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 8 (press h for help or q to quit)[27m[K[K       •   you try to use an invalid regexp (ret=6).[m
+[7m Manual page git-config(1) line 9 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 10 (press h for help or q to quit)[27m[K[K       On success, the command returns the exit code 0.[m
+[7m Manual page git-config(1) line 11 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 12 (press h for help or q to quit)[27m[K[K[1mOPTIONS[0m[m
+[7m Manual page git-config(1) line 13 (press h for help or q to quit)[27m[K[K       --replace-all[m
+[7m Manual page git-config(1) line 14 (press h for help or q to quit)[27m[K[K           Default behavior is to replace at most one line. This replaces all lines matching the key (and optionally the value_regex).[m
+[7m Manual page git-config(1) line 15 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 16 (press h for help or q to quit)[27m[K[K       --add[m
+[7m Manual page git-config(1) line 17 (press h for help or q to quit)[27m[K[K           Adds a new line to the option without altering any existing values. This is the same as providing [4m^$[24m as the value_regex in [1m--replace-all[0m.[m
+[7m Manual page git-config(1) line 18 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 19 (press h for help or q to quit)[27m[K[K       --get[m
+[7m Manual page git-config(1) line 20 (press h for help or q to quit)[27m[K[K           Get the value for a given key (optionally filtered by a regex matching the value). Returns error code 1 if the key was not found and the last value if[m
+[7m Manual page git-config(1) line 21 (press h for help or q to quit)[27m[K[K           multiple key values were found.[m
+[7m Manual page git-config(1) line 22 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 23 (press h for help or q to quit)[27m[K[K       --get-all[m
+[7m Manual page git-config(1) line 24 (press h for help or q to quit)[27m[K[K           Like get, but returns all values for a multi-valued key.[m
+[7m Manual page git-config(1) line 25 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 26 (press h for help or q to quit)[27m[K[K       --get-regexp[m
+[7m Manual page git-config(1) line 27 (press h for help or q to quit)[27m[K[K           Like --get-all, but interprets the name as a regular expression and writes out the key names. Regular expression matching is currently case-sensitive[m
+[7m Manual page git-config(1) line 28 (press h for help or q to quit)[27m[K[K           and done against a canonicalized version of the key in which section and variable names are lowercased, but subsection names are not.[m
+[7m Manual page git-config(1) line 29 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 30 (press h for help or q to quit)[27m[K[K       --get-urlmatch name URL[m
+[7m Manual page git-config(1) line 31 (press h for help or q to quit)[27m[K[K           When given a two-part name section.key, the value for section.<url>.key whose <url> part matches the best to the given URL is returned (if no such key[m
+[7m Manual page git-config(1) line 32 (press h for help or q to quit)[27m[K[K           exists, the value for section.key is used as a fallback). When given just the section as name, do so for all the keys in the section and list them.[m
+[7m Manual page git-config(1) line 33 (press h for help or q to quit)[27m[K[K           Returns error code 1 if no value is found.[m
+[7m Manual page git-config(1) line 34 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 35 (press h for help or q to quit)[27m[K[K       --global[m
+[7m Manual page git-config(1) line 36 (press h for help or q to quit)[27m[K[K           For writing options: write to global [1m~/.gitconfig[0m file rather than the repository [1m.git/config[0m, write to [1m$XDG_CONFIG_HOME/git/config[0m file if this file[m
+[7m Manual page git-config(1) line 37 (press h for help or q to quit)[27m[K[K           exists and the [1m~/.gitconfig[0m file doesn’t.[m
+[7m Manual page git-config(1) line 38 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page git-config(1) line 39 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# nano README.md 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                   README.md                                                                              [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m[36m# git-tutorial[3d[39m(B[mPrivate repo for hands on git tutorial of module-1[A[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2dj# git-tutorialj[?12l[?25h[?25l[36m# git-tutorial[39m(B[m[K[?12l[?25h[?25l[3d[?12l[?25h[?25lP[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l[44d[K[3;24H[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lu[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lu[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lu[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l-[?12l[?25h[?25l1[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[3;51H[?12l[?25h[?25l[?12l[?25h[?25l1[?12l[?25h[?25l[?12l[?25h[?25la1[?12l[?25h[?25ls1[?12l[?25h[?25li1[?12l[?25h[?25l1[K[?12l[?25h[?25lss1[?12l[?25h[?25li1[?12l[?25h[?25lg1[?12l[?25h[?25ln1[?12l[?25h[?25lm1[?12l[?25h[?25le1[?12l[?25h[?25ln1[?12l[?25h[?25lt1[?12l[?25h[?25l-1[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: README.md(B[m[44;30H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;76H(B[0;7m[ Wrote 2 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git c[Kadd .
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   README.md[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "modified readme"
+[main 263d8e3] modified readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:ta-roshan/git-tutorial
+   23d981e..263d8e3  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git sttau[K[Ka[K[Katus -s
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# nano .git/[Kignore
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;79H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                                                   .gitignore                                                                             [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2d[36m#[39m(B[m[?12l[?25h[?25l[36m [39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mg[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36mo[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36m [39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36m [39m(B[m[?12l[?25h[?25l[36m.[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36m [39m(B[m[?12l[?25h[?25l[36mf[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l*[?12l[?25h[?25l.[?12l[?25h[?25la[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: .gitignore(B[m[44;31H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;76H(B[0;7m[ Wrote 2 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git sttaus[K[K[K[Katus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# nano .gitignore 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                   .gitignore                                                                             [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m[36m# ignore all .a files[3d[39m(B[m*.a[A[?12l[?25h[?25l[3d[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[3;43r[3;1HM[1;46r[4;1H[?12l[?25h[?25l[3;43r[43;1H
+[1;46r[3;1H[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l/[?12l[?25h[?25lT[?12l[?25h[?25lO[?12l[?25h[?25lD[?12l[?25h[?25lA[?12l[?25h[?25l [?12l[?25h[?25lO[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25lb[?12l[?25h[?25lu[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l/[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: .gitignore(B[m[44;31H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;76H(B[0;7m[ Wrote 6 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status -s
+[31m??[m .gitignore
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add .gitignore 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git stau[Ktus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .gitignore[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status -s
+[32mA[m  .gitignore
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "added gitignore"
+[main 07f8368] added gitignore
+ 1 file changed, 6 insertions(+)
+ create mode 100644 .gitignore
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:ta-roshan/git-tutorial
+   263d8e3..07f8368  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# la
+[0m[34;42m.git[0m  [01;32m.gitignore[0m  [01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# touch removed[K[Kal.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mremoval.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git sttau[K[K[Katus [Kdiff
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# echo "new file"[K[K[K[K[K[K[K[K[Kfile to be removed" > removal.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mremoval.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add -a -m [K[K[K[K[K[K[K[K[K[Kcommit -a -m "Added file to be rm[Kemoved later"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mremoval.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git[K[K[Kgit add removal.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add removal.txt commit -a -m "Added file to be removed later"
+[main 665a152] Added file to be removed later
+ 1 file changed, 1 insertion(+)
+ create mode 100644 removal.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# gi[K[Kecho "time to remove" > removal.txt [1@>
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# gitecho "time to remove" >> removal.txt git status[Kcommit -a -m "Added file to be removed later"[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@t[1@i[1@m[1@e[C[1@ [1@t[1@o[C[1@ [1@b[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"
+[main 871b03c] time to be removed
+ 1 file changed, 1 insertion(+)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git c[Kstatus
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 587 bytes | 587.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To github.com:ta-roshan/git-tutorial
+   07f8368..871b03c  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# rm removal.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    removal.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git rm r[Kremoval.txt
+rm 'removal.txt'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    removal.txt[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git rm --cached removal.txt
+fatal: pathspec 'removal.txt' did not match any files
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "r[Kfile removed"
+[main 14acae1] file removed
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 removal.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)Writing objects: 100% (2/2)Writing objects: 100% (2/2), 224 bytes | 224.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:ta-roshan/git-tutorial
+   871b03c..14acae1  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# n[Ktouch file_to_be_moved.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mfile_to_be_moved.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m  [01;32mfile_to_be_moved.txt[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# mkdir new_folder
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git co[K[Kadd file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "file to be moved added[K[K[K[K[K[K"[1@a[1@d[1@d[1@e[1@d[1@ 
+[main 5d4eed9] added file to be moved
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file_to_be_moved.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git mv file_to_be_moved.txt new_folder/
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mrenamed:    file_to_be_moved.txt -> new_folder/file_to_be_moved.txt[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "file moved"
+[main 67500bf] file moved
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file_to_be_moved.txt => new_folder/file_to_be_moved.txt (100%)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 672 bytes | 672.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:ta-roshan/git-tutorial
+   14acae1..67500bf  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log
+[?1h=[33mcommit 67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:22:19 2022 +0530[m
+[m
+    file moved[m
+[m
+[33mcommit 5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:21:41 2022 +0530[m
+[m
+    added file to be moved[m
+[m
+[33mcommit 14acae1f4b9993050887b02fb4c402381a90bc19[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:20:33 2022 +0530[m
+[m
+    file removed[m
+[m
+[33mcommit 871b03cc937eb022967b99f097e0b531d1152905[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:17:37 2022 +0530[m
+[m
+    time to be removed[m
+[m
+[33mcommit 665a1525834cc6736b7325c1bb67aecc3abf3e7d[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:16:46 2022 +0530[m
+[m
+    Added file to be removed later[m
+[m
+[33mcommit 07f8368584b30e985ef58f6726e265fe6c72f3f2[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Mon Jun 13 16:26:50 2022 +0530[m
+[m
+    added gitignore[m
+[m
+[33mcommit 263d8e3f6770fe06617d7dc6d29d4d5f551d07af[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Mon Jun 13 16:24:15 2022 +0530[m
+[m
+    modified readme[m
+[m
+[33mcommit 23d981ecca38e3a4b8f15c87b9a69a73ee188e1f[m[m
+Author: ta-roshan <106526809+ta-roshan@users.noreply.github.com>[m
+Date:   Tue May 31 15:30:28 2022 +0530[m
+:[K[K[m
+:[K[K    Initial commit[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log -p 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log -p 202[1P2-2
+[?1h=[33mcommit 67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:22:19 2022 +0530[m
+[m
+    file moved[m
+[m
+[1mdiff --git a/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1msimilarity index 100%[m[m
+[1mrename from file_to_be_moved.txt[m[m
+[1mrename to new_folder/file_to_be_moved.txt[m[m
+[m
+[33mcommit 5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:21:41 2022 +0530[m
+[m
+    added file to be moved[m
+[m
+[1mdiff --git a/file_to_be_moved.txt b/file_to_be_moved.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --stats[K
+[?1h=[33mcommit 67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:22:19 2022 +0530[m
+[m
+    file moved[m
+[m
+ file_to_be_moved.txt => new_folder/file_to_be_moved.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit 5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:21:41 2022 +0530[m
+[m
+    added file to be moved[m
+[m
+ file_to_be_moved.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[33mcommit 14acae1f4b9993050887b02fb4c402381a90bc19[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:20:33 2022 +0530[m
+[m
+    file removed[m
+[m
+ removal.txt | 2 [31m--[m[m
+ 1 file changed, 2 deletions(-)[m
+[m
+[33mcommit 871b03cc937eb022967b99f097e0b531d1152905[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:17:37 2022 +0530[m
+[m
+    time to be removed[m
+[m
+ removal.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit 665a1525834cc6736b7325c1bb67aecc3abf3e7d[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:16:46 2022 +0530[m
+[m
+    Added file to be removed later[m
+[m
+ removal.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+:[K[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --stat -p 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --stat -p 2-2
+[?1h=[33mcommit 67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:22:19 2022 +0530[m
+[m
+    file moved[m
+---[m
+ file_to_be_moved.txt => new_folder/file_to_be_moved.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[1mdiff --git a/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1msimilarity index 100%[m[m
+[1mrename from file_to_be_moved.txt[m[m
+[1mrename to new_folder/file_to_be_moved.txt[m[m
+[m
+[33mcommit 5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:21:41 2022 +0530[m
+[m
+    added file to be moved[m
+---[m
+ file_to_be_moved.txt | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[m
+[1mdiff --git a/file_to_be_moved.txt b/file_to_be_moved.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --pretty=online
+fatal: invalid --pretty format: online
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --pretty=onlineeline
+[?1h=[33m67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+[33m5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m added file to be moved[m
+[33m14acae1f4b9993050887b02fb4c402381a90bc19[m file removed[m
+[33m871b03cc937eb022967b99f097e0b531d1152905[m time to be removed[m
+[33m665a1525834cc6736b7325c1bb67aecc3abf3e7d[m Added file to be removed later[m
+[33m07f8368584b30e985ef58f6726e265fe6c72f3f2[m added gitignore[m
+[33m263d8e3f6770fe06617d7dc6d29d4d5f551d07af[m modified readme[m
+[33m23d981ecca38e3a4b8f15c87b9a69a73ee188e1f[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --pretty=oneline --grpa[K[Kaph
+[?1h=* [33m67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m added file to be moved[m
+* [33m14acae1f4b9993050887b02fb4c402381a90bc19[m file removed[m
+* [33m871b03cc937eb022967b99f097e0b531d1152905[m time to be removed[m
+* [33m665a1525834cc6736b7325c1bb67aecc3abf3e7d[m Added file to be removed later[m
+* [33m07f8368584b30e985ef58f6726e265fe6c72f3f2[m added gitignore[m
+* [33m263d8e3f6770fe06617d7dc6d29d4d5f551d07af[m modified readme[m
+* [33m23d981ecca38e3a4b8f15c87b9a69a73ee188e1f[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --pretty=oneline --graph[Kgit log --since=2.weekes[K[Ks
+[?1h=[33mcommit 67500bf72fad23f30f85fc405cd31082aa1faa7a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:22:19 2022 +0530[m
+[m
+    file moved[m
+[m
+[33mcommit 5d4eed9899cb1fbc93988268c4df0c9fc6bd2986[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:21:41 2022 +0530[m
+[m
+    added file to be moved[m
+[m
+[33mcommit 14acae1f4b9993050887b02fb4c402381a90bc19[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:20:33 2022 +0530[m
+[m
+    file removed[m
+[m
+[33mcommit 871b03cc937eb022967b99f097e0b531d1152905[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:17:37 2022 +0530[m
+[m
+    time to be removed[m
+[m
+[33mcommit 665a1525834cc6736b7325c1bb67aecc3abf3e7d[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Tue Jun 14 12:16:46 2022 +0530[m
+[m
+    Added file to be removed later[m
+[m
+[33mcommit 07f8368584b30e985ef58f6726e265fe6c72f3f2[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Mon Jun 13 16:26:50 2022 +0530[m
+[m
+    added gitignore[m
+[m
+[33mcommit 263d8e3f6770fe06617d7dc6d29d4d5f551d07af[m[m
+Author: ta-roshan <roshan.hande@tigeranalytics.com>[m
+Date:   Mon Jun 13 16:24:15 2022 +0530[m
+[m
+    modified readme[m
+[m
+[33mcommit 23d981ecca38e3a4b8f15c87b9a69a73ee188e1f[m[m
+Author: ta-roshan <106526809+ta-roshan@users.noreply.github.com>[m
+Date:   Tue May 31 15:30:28 2022 +0530[m
+:[K[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --since=2.weeks[K[K[K[K[Kminutes
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# nan[K[K[Kls
+[0m[01;32mREADME.md[0m  [34;42mnew_folder[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# v[Knano new_folder/file_to_be_moved.txt 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                        new_folder/file_to_be_moved.txt                                                                   [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2ds[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/file_to_be_moved.txt(B[m[44;52H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;77H(B[0;7m[ Wrote 1 line ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..46c7174 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32msomething appended[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git co[K[Kadd [K .
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   new_folder/file_to_be_moved.txt[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff --staged
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..46c7174 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32msomething appended[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git reset new_folder/file_to_be_moved.txt 
+Unstaged changes after reset:
+M	new_folder/file_to_be_moved.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git reset new_folder/file_to_be_moved.txt [25Pdiff --staged[K
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..46c7174 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32msomething appended[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git reset [K[K[K[K[K[K[K[K[K[Kgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..46c7174 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32msomething appended[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add new_folder/file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   new_folder/file_to_be_moved.txt[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git reset HEAD new_folder/file_to_be_moved.txt 
+Unstaged changes after reset:
+M	new_folder/file_to_be_moved.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout -- new_folder/file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# gi[K[Kann[K[K[Knano new_folder/file_to_be_moved.txt 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                        new_folder/file_to_be_moved.txt                                                                   [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2da[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[3d[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[44d[K[3;14H[?12l[?25h[?25le[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/file_to_be_moved.txt(B[m[44;52H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;76H(B[0;7m[ Wrote 2 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..b908a26 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1,2 @@[m[m
+[32m+[m[32madded 1 line[m[m
+[32m+[m[32madded 2nd line[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git restore new_folder/file_to_be_moved.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# g[Knano  [Knew_folder/file_to_be_moved.txt 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                        new_folder/file_to_be_moved.txt                                                                   [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2da[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[3d[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ll[44d[K[3;12H[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/file_to_be_moved.txt(B[m[44;52H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;76H(B[0;7m[ Wrote 2 lines ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# g[Kgit restore --staged new_folder/file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git addd [K[K new_folder/file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   new_folder/file_to_be_moved.txt[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git restore --stagd[Ked new_folder/file_to_be_moved.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git stau[Ktus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# gi[K[Kgit remote -v
+origin	git@github.com:ta-roshan/git-tutorial (fetch)
+origin	git@github.com:ta-roshan/git-tutorial (push)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push main[Kgit push main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push main origin
+error: src refspec origin does not match any
+[31merror: failed to push some refs to 'main'
+[m(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Everything up-to-date
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pull
+Already up to date.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git fetch origin
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git remote show origin
+* remote origin
+  Fetch URL: git@github.com:ta-roshan/git-tutorial
+  Push  URL: git@github.com:ta-roshan/git-tutorial
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git remote show origin[K[K[K[K[K[K[K
+origin
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch
+[?1h=* [32mmain[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git tag
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git tag -l
+[?1h=[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m  [34;42mnew_folder[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m  [34;42mnew_folder[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch 
+.git/       .gitignore  README.md   new_folder/ 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch testing
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git c[Kbre[Kanch -l
+[?1h=* [32mmain[m[m
+  testing[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --oneline --decorate
+[?1h=[33m67500bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mtesting[m[33m)[m file moved[m
+[33m5d4eed9[m added file to be moved[m
+[33m14acae1[m file removed[m
+[33m871b03c[m time to be removed[m
+[33m665a152[m Added file to be removed later[m
+[33m07f8368[m added gitignore[m
+[33m263d8e3[m modified readme[m
+[33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git diff
+[?1h=[1mdiff --git a/new_folder/file_to_be_moved.txt b/new_folder/file_to_be_moved.txt[m[m
+[1mindex e69de29..b908a26 100644[m[m
+[1m--- a/new_folder/file_to_be_moved.txt[m[m
+[1m+++ b/new_folder/file_to_be_moved.txt[m[m
+[36m@@ -0,0 +1,2 @@[m[m
+[32m+[m[32madded 1 line[m[m
+[32m+[m[32madded 2nd line[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout testing
+M	new_folder/file_to_be_moved.txt
+Switched to branch 'testing'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch testing
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "few lines added"
+On branch testing
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new_folder/file_to_be_moved.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git add[K[K[Kcommit -m "few lines added"[1@a[1@ [1@-
+[testing 0d5a388] few lines added
+ 1 file changed, 2 insertions(+)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch testing
+nothing to commit, working tree clean
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git statuscommit -a -m "few lines added"[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kcheckout testingdiff[Klog --oneline --decorate
+[?1h=[33m0d5a388[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m)[m few lines added[m
+[33m67500bf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m file moved[m
+[33m5d4eed9[m added file to be moved[m
+[33m14acae1[m file removed[m
+[33m871b03c[m time to be removed[m
+[33m665a152[m Added file to be removed later[m
+[33m07f8368[m added gitignore[m
+[33m263d8e3[m modified readme[m
+[33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git cehc[K[K[Kheckout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout mainlog --oneline --decorate
+[?1h=[33m67500bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+[33m5d4eed9[m added file to be moved[m
+[33m14acae1[m file removed[m
+[33m871b03c[m time to be removed[m
+[33m665a152[m Added file to be removed later[m
+[33m07f8368[m added gitignore[m
+[33m263d8e3[m modified readme[m
+[33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git log --oneline --decorate --graph --all
+[?1h=* [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+* [33m67500bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git[K[K[Kgit c[Kbranch new-[K-branch
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout nee[Kw-branch
+Switched to branch 'new-branch'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git [K[K[K[Knano new_folder/file_to_be_moved.txt 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                        new_folder/file_to_be_moved.txt                                                                   [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2di[?12l[?25h[?25l[K[?12l[?25h[?25lf[?12l[?25h[?25le[?12l[?25h[?25lw[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/file_to_be_moved.txt(B[m[44;52H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;77H(B[0;7m[ Wrote 1 line ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -a -m "added single line"
+[new-branch b4e55ce] added single line
+ 1 file changed, 1 insertion(+)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -a -m "added single line"nano new_folder/file_to_be_moved.txt [14Pgit checkout new-branch[2Pbranch[C[C[C[C[C[C[C[C[C[C[Clog --oneline --decorate --graph --all
+[?1h=* [33mb4e55ce[m[33m ([m[1;36mHEAD -> [m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout mainlog --oneline --decorate --graph --all
+[?1h=* [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -b iss[K[K[K[K[K[K[K[K[K[K[K[K[Kcheckout -b iss[K[K[Knew_feature
+Switched to a new branch 'new_feature'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git [K[K[K[Knano new_folder/feature.txt
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;79H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                                             new_folder/feature.txt                                                                       [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2da[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25le[?12l[?25h[?25lw[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25la[44d[K[2;25H[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/feature.txt(B[m[44;43H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;77H(B[0;7m[ Wrote 1 line ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git ad[K[Kco[K[Kadd new_folder/feature.txt 
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "added new feature"
+[new_feature 2364b43] added new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new_folder/feature.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "added new feature"[2Padd new_folder/feature.txt [4Pnano new_folder/feature.txtgit checkout -b new_featurelog --oneline --decorate --graph --all
+[?1h=* [33m2364b43[m[33m ([m[1;36mHEAD -> [m[1;32mnew_feature[m[33m)[m added new feature[m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout -b hotfix[K[K[K[K[K[K[K[K[Kmaster
+error: pathspec 'master' did not match any file(s) known to git
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout master[K[K[K[Kin
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout -b hotfix
+Switched to a new branch 'hotfix'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# nano new_folder/file_to_be_moved.txt 
+[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                        new_folder/file_to_be_moved.txt                                                                   [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[m[?12l[?25h[?25l[1;159H(B[0;7mModified(B[m[2di[?12l[?25h[?25l[K[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lx[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[44d(B[0;7mSave modified buffer?                                                                                                                                                   [45;1H Y(B[m Yes[K[46d(B[0;7m N(B[m No  [46;18H(B[0;7mC(B[m Cancel[K[44;23H[?12l[?25h[?25l[45d(B[0;7m^G(B[m Get Help[45;43H(B[0;7mM-D(B[m DOS Format[45;85H(B[0;7mM-A(B[m Append[45;127H(B[0;7mM-B(B[m Backup File[46d(B[0;7m^C(B[m Cancel[17G         [46;43H(B[0;7mM-M(B[m Mac Format[46;85H(B[0;7mM-P(B[m Prepend[46;127H(B[0;7m^T(B[m To Files[44d(B[0;7mFile Name to Write: new_folder/file_to_be_moved.txt(B[m[44;52H[?12l[?25h[?25l[44;77H[1K (B[0;7m[ Writing... ](B[m[K[1;159H(B[0;7m        (B[m[44;77H(B[0;7m[ Wrote 1 line ](B[m[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -a -m "hotfix complete"
+[hotfix 19c3112] hotfix complete
+ 1 file changed, 1 insertion(+)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout mainommit -a -m "hotfix complete"nano new_folder/file_to_be_moved.txt [15Pgit checkout -b hotfix[5Pmainsterlog --oneline --decorate --graph --all
+[?1h=* [33m19c3112[m[33m ([m[1;32mhotfix[m[33m)[m hotfix complete[m
+[31m|[m * [33m2364b43[m[33m ([m[1;32mnew_feature[m[33m)[m added new feature[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge hotfix
+Updating 67500bf..19c3112
+Fast-forward
+ new_folder/file_to_be_moved.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge hotfixlog --oneline --decorate --graph --all
+[?1h=* [33m19c3112[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mhotfix[m[33m)[m hotfix complete[m
+[31m|[m * [33m2364b43[m[33m ([m[1;32mnew_feature[m[33m)[m added new feature[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -d hotfix
+Deleted branch hotfix (was 19c3112).
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -d hotfixlog --oneline --decorate --graph --all
+[?1h=* [33m19c3112[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m hotfix complete[m
+[31m|[m * [33m2364b43[m[33m ([m[1;32mnew_feature[m[33m)[m added new feature[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout i[Knew_folder/[K[K[K[K[K[K[Kfeature
+Switched to branch 'new_feature'
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout new_featurelog --oneline --decorate --graph --all
+[?1h=* [33m19c3112[m[33m ([m[1;32mmain[m[33m)[m hotfix complete[m
+[31m|[m * [33m2364b43[m[33m ([m[1;36mHEAD -> [m[1;32mnew_feature[m[33m)[m added new feature[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[31m|[m[31m/[m  [m
+[31m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[31m|[m[31m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge new[K[K[K[K[K[K[K[K[Kcheckout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge new_feature
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;78H(B[0;7m[ Reading... ](B[m[44;77H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                     /mnt/d/Git/git-tutorial/.git/MERGE_MSG                                                               [1;167H(B[m[45d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[45;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[46;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[44d[2d[39;49m(B[mMerge branch 'new_feature' into main[3d[36m# Please enter a commit message to explain why this merge is necessary,[4d# especially if it merges an updated upstream into a topic branch.[5d#[6d# Lines starting with '#' will be ignored, and an empty message aborts[7d# the commit.[2d[39m(B[m[?12l[?25h[?25l[44d[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'recursive' strategy.
+ new_folder/feature.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new_folder/feature.txt
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge new_feature[4Pcheckout mainlog --oneline --decorate --graph --all
+[?1h=*   [33m88a10fb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'new_feature' into main[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m2364b43[m[33m ([m[1;32mnew_feature[m[33m)[m added new feature[m
+* [32m|[m [33m19c3112[m hotfix complete[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[32m|[m[32m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -d new_feature
+Deleted branch new_feature (was 2364b43).
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -d new_featurelog --oneline --decorate --graph --all
+[?1h=*   [33m88a10fb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'new_feature' into main[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m2364b43[m added new feature[m
+* [32m|[m [33m19c3112[m hotfix complete[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[32m|[m[32m/[m  [m
+* [33m67500bf[m[33m ([m[1;31morigin/main[m[33m)[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git checkout master[K[K[K[Kin
+Already on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:   9% (1/11)Writing objects:  27% (3/11)Writing objects:  36% (4/11)Writing objects:  45% (5/11)Writing objects:  54% (6/11)Writing objects:  63% (7/11)Writing objects:  72% (8/11)Writing objects:  81% (9/11)Writing objects:  90% (10/11)Writing objects: 100% (11/11)Writing objects: 100% (11/11), 971 bytes | 194.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 1 local object.[K
+To github.com:ta-roshan/git-tutorial
+   67500bf..88a10fb  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pushcheckout mainsterlog --oneline --decorate --graph --all
+[?1h=*   [33m88a10fb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'new_feature' into main[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m2364b43[m added new feature[m
+* [32m|[m [33m19c3112[m hotfix complete[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[32m|[m[32m/[m  [m
+* [33m67500bf[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge [K[K[K[K[K[Kbranch -l
+[?1h=* [32mmain[m[m
+  new-branch[m[m
+  testing[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git merge new-branch
+Auto-merging new_folder/file_to_be_moved.txt
+CONFLICT (content): Merge conflict in new_folder/file_to_be_moved.txt
+Automatic merge failed; fix conflicts and then commit the result.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff
+Merging:
+new_folder/file_to_be_moved.txt
+
+Normal merge conflict for 'new_folder/file_to_be_moved.txt':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff): nano    
+4 files to edit
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"./new_folder/file_to_be_moved_LOCAL_688.txt" 1L, 16C[46;32HBASE_688.txt" [46;47H[K[46;46H0L, 0C[46;32HREMOTE_688.txt" [46;48H[K[46;48H1L, 16C"new_folder/file_to_be_moved.txt" [46;35H[K[46;35H5L, 72C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m[48;5;248m  [m[1m[101mhotfix complete[m[48;5;225m                                      [m[7m|[2;56H|[3;56H|[4;56H|[5;56H|[6;56H|[7;56H|[8;56H|[9;56H|[10;56H|[11;56H|[12;56H|[13;56H|[14;56H|[15;56H|[16;56H|[17;56H|[18;56H|[19;56H|[20;56H|[21;56H|[m[2;1H[34m[48;5;248m  
+  
+  
+  [m[2;3H[94m[48;5;159m-----------------------------------------------------[3;3H-----------------------------------------------------[4;3H-----------------------------------------------------[5;3H-----------------------------------------------------[m
+[94m~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      
+~                                                      [m
+[7m<lder/file_to_be_moved_LOCAL_688.txt 1,1            All [m[1;57H[34m[48;5;248m  [m[48;5;225m                                                      [m[7m|[2;113H|[3;113H|[4;113H|[5;113H|[6;113H|[7;113H|[8;113H|[9;113H|[10;113H|[11;113H|[12;113H|[13;113H|[14;113H|[15;113H|[16;113H|[17;113H|[18;113H|[19;113H|[20;113H|[21;113H|[m[2;57H[34m[48;5;248m  [3;57H  [4;57H  [5;57H  [m[2;59H[94m[48;5;159m------------------------------------------------------[3;59H------------------------------------------------------[4;59H------------------------------------------------------[5;59H------------------------------------------------------[m[6;57H[94m~                                                       [7;57H~                                                       [8;57H~                                                       [9;57H~                                                       [10;57H~                                                       [11;57H~                                                       [12;57H~                                                       [13;57H~                                                       [14;57H~                                                       [15;57H~                                                       [16;57H~                                                       [17;57H~                                                       [18;57H~                                                       [19;57H~                                                       [20;57H~                                                       [21;57H~                                                       [m[22;57H[7m<folder/file_to_be_moved_BASE_688.txt 0,0-1          All [m[1;114H[34m[48;5;248m  [m[1m[101mfew lines added[m[48;5;225m                                      [m[2;114H[34m[48;5;248m  [3;114H  [4;114H  [5;114H  [m[2;116H[94m[48;5;159m-----------------------------------------------------[3;116H-----------------------------------------------------[4;116H-----------------------------------------------------[5;116H-----------------------------------------------------[m[6;114H[94m~                                                      [7;114H~                                                      [8;114H~                                                      [9;114H~                                                      [10;114H~                                                      [11;114H~                                                      [12;114H~                                                      [13;114H~                                                      [14;114H~                                                      [15;114H~                                                      [16;114H~                                                      [17;114H~                                                      [18;114H~                                                      [19;114H~                                                      [20;114H~                                                      [21;114H~                                                      [m[22;114H[7m<der/file_to_be_moved_REMOTE_688.txt 1,1            All[m[23;1H[34m[48;5;248m  [m[1m[101m<<<<<<< HEAD[m[48;5;225m                                                                                                                                                          [m[24;1H[34m[48;5;248m  [m[48;5;81mhotfix complete                                                                                                                                                       [m[25;1H[34m[48;5;248m  [m[48;5;81m=======                                                                                                                                                               [m[26;1H[34m[48;5;248m  [m[48;5;81mfew lines added                                                                                                                                                       [m[27;1H[34m[48;5;248m  [m[48;5;81m>>>>>>> new-branch                                                                                                                                                    [m[28;1H[94m~                                                                                                                                                                       [29;1H~                                                                                                                                                                       [30;1H~                                                                                                                                                                       [31;1H~                                                                                                                                                                       [32;1H~                                                                                                                                                                       [33;1H~                                                                                                                                                                       [34;1H~                                                                                                                                                                       [35;1H~                                                                                                                                                                       [36;1H~                                                                                                                                                                       [37;1H~                                                                                                                                                                       [38;1H~                                                                                                                                                                       [39;1H~                                                                                                                                                                       [40;1H~                                                                                                                                                                       [41;1H~                                                                                                                                                                       [42;1H~                                                                                                                                                                       [43;1H~                                                                                                                                                                       [44;1H~                                                                                                                                                                       [m[45;1H[1m[7mnew_folder/file_to_be_moved.txt                                                                                                                       1,1            All[23;3H[?25h[?25l[m[46;158Hj[23;3H[46;158H [24;3H[45;151H[1m[7m2,[24;3H[?25h[?25l[m[46;158Hj[24;3H[46;158H [25;3H[45;151H[1m[7m3,[25;3H[?25h[?25l[m[46;158Hj[25;3H[46;158H [26;3H[45;151H[1m[7m4,[26;3H[?25h[?25l[m[46;158Hk[26;3H[46;158H [25;3H[45;151H[1m[7m3,[25;3H[?25h[?25l[m[46;158Hk[25;3H[46;158H [24;3H[45;151H[1m[7m2,[24;3H[?25h[?25l[m[46;158Hk[24;3H[46;158H [23;3H[45;151H[1m[7m1,[23;3H[?25h[?25l[m[46;158Hk[23;3H[46;158H [23;3H[?25h[?25l[46;158H^W[23;3H[?25h[?25l[46;160Hk[23;3H[46;158H   [1;3H[22;1H[1m[7m<lder/file_to_be_moved_LOCAL_688.txt 1,1            All [m[45;1H[7mnew_folder/file_to_be_moved.txt[m[1m[7m [m[7m                                                                                                                       1,1            All[1;3H[?25h[?25l[m[46;158Hl[1;3H[46;158H [1;4H[22;153H[7m2[45;153H2[m[22;40H[1m[7m2 [1;4H[?25h[?25l[m[46;158H^W[1;4H[?25h[?25l[46;160H^L[1;4H[46;158H    [1;59H[22;1H[7m<lder/file_to_be_moved_LOCAL_688.txt[m[1m[7m [m[7m 1,1            All[m[1m[7m [m[7m [m[1m[7m<folder/file_to_be_moved_BASE_688.txt 0,0-1          All [m[39C[7m1[45;153H1[1;59H[?25h[?25l[m[46;158H^W[1;59H[?25h[?25l[46;160Hh[1;59H[46;158H   [1;3H[22;1H[1m[7m<lder/file_to_be_moved_LOCAL_688.txt 1,1            All [m[7m<folder/file_to_be_moved_BASE_688.txt[m[1m[7m [m[7m 0,0-1          All[m[1m[7m [m[7m [1;3H[?25h[?25l[m[46;158Hj[1;3H[46;158H [1;3H[?25h[?25l[46;158H^W[1;3H[?25h[?25l[46;160Hj[1;3H[46;158H   [23;3H[22;1H[7m<lder/file_to_be_moved_LOCAL_688.txt[m[1m[7m [m[7m 1,1            All[m[1m[7m [m[7m [m[45;1H[1m[7mnew_folder/file_to_be_moved.txt                                                                                                                       1,1            All[23;3H[?25h[?25l[m[46;158Hj[23;3H[46;158H [24;3H[45;151H[1m[7m2,[24;3H[?25h[?25l[m[46;158Hl[24;3H[46;158H [24;4H[22;40H[7m2[112C2[m[45;153H[1m[7m2 [24;4H[?25h[?25l[m[46;158Hd[24;4H[?25h[?25l[46;159Hd[24;4H[46;158H  [24;3H[5;1H[94m~                                                      
+~ [m[22;40H[7m1[m[5;57H[94m~                                                       [6;57H~ [5;114H~                                                      [6;114H~ [m[22;153H[7m1[m[24;3H[48;5;81m=======        [25;3Hfew lines added[26;3H>>>>>>> new-branch[m
+[94m~                                                                                                                                                                       [m[45;33H[1m[7m[+][117C1 [24;3H[?25h[?25l[m[46;158Hj[24;3H[46;158H [25;3H[45;151H[1m[7m3,[25;3H[?25h[?25l[m[46;158Hj[25;3H[46;158H [26;3H[45;151H[1m[7m4,[26;3H[?25h[?25l[m[46;158HP[26;3H[46;158H [26;3H[5;1H[34m[48;5;248m  [m[94m[48;5;159m-----------------------------------------------------[m[1C[34m[48;5;248m  [m[94m[48;5;159m------------------------------------------------------[m[1C[34m[48;5;248m  [m[94m[48;5;159m-----------------------------------------------------[m[26;3H[48;5;81mhotfix complete   [m
+[34m[48;5;248m  [m[48;5;81m>>>>>>> new-branch                                                                                                                                                    [26;3H[?25h[?25l[m[46;158Hj[26;3H[46;158H [27;3H[45;151H[1m[7m5,[27;3H[?25h[?25l[m[46;158Hd[27;3H[?25h[?25l[46;159Hd[27;3H[46;158H  [26;3H[5;1H[94m~                                                      
+~ [5;57H~                                                       [6;57H~ [5;114H~                                                      [6;114H~ [27;1H~                                                                                                                                                                       [m[45;151H[1m[7m4,[26;3H[?25h[?25l[m[46;158Hk[26;3H[46;158H [25;3H[45;151H[1m[7m3,[25;3H[?25h[?25l[m[46;158Hk[25;3H[46;158H [24;3H[45;151H[1m[7m2,[24;3H[?25h[?25l[m[46;158Hd[24;3H[?25h[?25l[46;159Hd[24;3H[46;158H  [24;3H[4;1H[94m~                                                      
+~ [4;57H~                                                       [5;57H~ [4;114H~                                                      [5;114H~ [m[24;3H[48;5;81mfew lines added[25;3Hhotfix complete[m
+[94m~                                                                                                                                                                       [24;3H[?25h[?25l[m[46;158Hk[24;3H[46;158H [23;3H[45;151H[1m[7m1,[23;3H[?25h[?25l[m[46;158Hd[23;3H[?25h[?25l[46;159Hd[23;3H[46;158H  [23;3H[3;1H[94m~                                                      
+~ [3;57H~                                                       [4;57H~ [3;114H~                                                      [4;114H~ [m[23;3H[1m[101mfew lines added[m[24;3H[48;5;81mhotfix complete[m
+[94m~                                                                                                                                                                       [23;3H[?25h[?25l[m[46;158H:[23;3H[46;1H[K[46;1H:[?2004h[?25hwq[?25l"new_folder/file_to_be_moved.txt" 2L, 32C written[?2004h[1;3H[22;56H[7m|[23;56H|[24;56H|[25;56H|[26;56H|[27;56H|[28;56H|[29;56H|[30;56H|[31;56H|[32;56H|[33;56H|[34;56H|[35;56H|[36;56H|[37;56H|[38;56H|[39;56H|[40;56H|[41;56H|[42;56H|[43;56H|[44;56H|[m[2;1H[94m~                                                      
+~ [22;1H~                                                      
+~                                                      
+~                                                      [m[45;1H[1m[7m<lder/file_to_be_moved_LOCAL_688.txt 1,1[12CAll[m[22;113H[7m|[23;113H|[24;113H|[25;113H|[26;113H|[27;113H|[28;113H|[29;113H|[30;113H|[31;113H|[32;113H|[33;113H|[34;113H|[35;113H|[36;113H|[37;113H|[38;113H|[39;113H|[40;113H|[41;113H|[42;113H|[43;113H|[44;113H|[m[2;57H[94m~                                                       [3;57H~ [22;57H~                                                       [23;57H~                                                       [24;57H~                                                       [25;57H~[26;57H~[27;57H~[28;57H~[29;57H~[30;57H~[31;57H~[32;57H~[33;57H~[34;57H~[35;57H~[36;57H~[37;57H~[38;57H~[39;57H~[40;57H~[41;57H~[42;57H~[43;57H~[44;57H~[m[45;57H[7m<folder/file_to_be_moved_BASE_688.txt 0,0-1          All [m[2;114H[94m~                                                      [3;114H~ [22;114H~                                                      [23;114H~                                                      [24;114H~                                                      [25;114H~[26;114H~[27;114H~[28;114H~[29;114H~[30;114H~[31;114H~[32;114H~[33;114H~[34;114H~[35;114H~[36;114H~[37;114H~[38;114H~[39;114H~[40;114H~[41;114H~[42;114H~[43;114H~[44;114H~[m[45;114H[7m<der/file_to_be_moved_REMOTE_688.txt 1,1            All[1;3H[?25h[?25l[m[46;158H:[1;3H[46;1H[K[46;1H:[?2004h[?25hqa[?25l[?2004l[23;2t[23;1t[46;1H[K[46;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	[32mmodified:   new_folder/file_to_be_moved.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew_folder/file_to_be_moved.txt.orig[m
+
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git commit -m "merged with new branch [K[1@a[1@n[1@d[1@ [1@i[1@s[1@s[1@u[1P[1@u[1@e[1@ [1@r[1@e[1@s[1@o[1@l[1@v[1@e[1@d[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"[1Pbranch"-branch"
+[main 1f0187d] merged and issue resolved with new-branch
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git stau[Ktus
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew_folder/file_to_be_moved.txt.orig[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -v
+[?1h=* [32mmain      [m 1f0187d [ahead 2] merged and issue resolved with new-branch[m
+  new-branch[m b4e55ce added single line[m
+  testing   [m 0d5a388 few lines added[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -v[Kl
+[?1h=* [32mmain[m[m
+  new-branch[m[m
+  testing[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git push
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 731 bytes | 243.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To github.com:ta-roshan/git-tutorial
+   88a10fb..1f0187d  main -> main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew_folder/file_to_be_moved.txt.orig[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status[2Ppushbranch -lv[3Pstatuscommit -m "merged and issue resolved with new-branch"status[Kmergetool new-branch[7Pbranch -llog --oneline --decorate --graph --all
+[?1h=*   [33m1f0187d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m merged and issue resolved with new-branch[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33mb4e55ce[m[33m ([m[1;32mnew-branch[m[33m)[m added single line[m
+* [32m|[m   [33m88a10fb[m Merge branch 'new_feature' into main[m
+[33m|[m[34m\[m [32m\[m  [m
+[33m|[m * [32m|[m [33m2364b43[m added new feature[m
+[33m|[m [32m|[m[32m/[m  [m
+* [32m/[m [33m19c3112[m hotfix complete[m
+[32m|[m[32m/[m  [m
+[32m|[m * [33m0d5a388[m[33m ([m[1;32mtesting[m[33m)[m few lines added[m
+[32m|[m[32m/[m  [m
+* [33m67500bf[m file moved[m
+* [33m5d4eed9[m added file to be moved[m
+* [33m14acae1[m file removed[m
+* [33m871b03c[m time to be removed[m
+* [33m665a152[m Added file to be removed later[m
+* [33m07f8368[m added gitignore[m
+* [33m263d8e3[m modified readme[m
+* [33m23d981e[m Initial commit[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch --merged
+[?1h=* [32mmain[m[m
+  new-branch[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch --mergednmergedomerged-merged
+[?1h=  testing[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch --all
+[?1h=* [32mmain[m[m
+  new-branch[m[m
+  testing[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git ls-remote
+From git@github.com:ta-roshan/git-tutorial
+1f0187dbc8b1eadc77c60c4bcf0a9263be345151	HEAD
+1f0187dbc8b1eadc77c60c4bcf0a9263be345151	refs/heads/main
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git remote show
+origin
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git pull
+Already up to date.
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew_folder/file_to_be_moved.txt.orig[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# git branch -vv
+[?1h=* [32mmain      [m 1f0187d [[34morigin/main[m] merged and issue resolved with new-branch[m
+  new-branch[m b4e55ce added single line[m
+  testing   [m 0d5a388 few lines added[m
+[K[?1l>(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m  [34;42mnew_folder[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# ls
+[0m[01;32mREADME.md[0m  [34;42mnew_folder[0m
+(base) ]0;root@TIGER01692: /mnt/d/Git/git-tutorialroot@TIGER01692:/mnt/d/Git/git-tutorial# exit
+exit
+
+Script done on 2022-06-23 17:18:45+05:30 [COMMAND_EXIT_CODE="0"]
