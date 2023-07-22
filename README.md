@@ -8,10 +8,16 @@ The following techniques have been used:
  - Decision Tree
  - Random Forest
 
+## Setup python environment
+environment can be setup by running the following command over command line
+ `conda env create -n <env-name> -f env.yml`
+incase of setting up the environment on windows use corresponding yml file
+ `conda env create -n <env-name> -f env-windows.yml`
+
 ## Steps performed
  - We prepare and clean the data. We check and impute for missing values.
  - Features are generated and the variables are checked for correlation.
- - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
+ - Multiple sampling techniques are evaluated. The data set is split into train and test.
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
 
 ## To excute the script
